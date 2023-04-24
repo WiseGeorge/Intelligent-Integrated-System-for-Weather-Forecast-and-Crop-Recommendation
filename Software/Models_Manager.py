@@ -19,30 +19,30 @@ class CropWeather_Models():
         self.Rainfall_Models = ['Gradient Booosting Regressor', 'Linear Regression', 'Support Vector Regressor']
 
         # Humidity Standarization
-        self.crop_df = pd.read_csv('../Datasets/Crop_recommendation.csv')
+        self.crop_df = pd.read_csv('Datasets/Crop_recommendation.csv')
         self.humidity_Series = self.crop_df['humidity']
         self.humidity_mean = round(self.humidity_Series.mean(), 3)
         self.humidity_median = round(self.humidity_Series.median(), 3)
 
         # Crop Models Init
-        self.DT_Crop = load('../Models/Crop/Crop_DT.joblib')
-        self.GNB_Crop =  load('../Models/Crop/Crop_GNB.joblib')
-        self.RF_Crop =  load('../Models/Crop/Crop_RF.joblib')
-        self.SVM_Crop =  load('../Models/Crop/Crop_SVM.joblib')
-        self.WC_Crop =  load('../Models/Crop/Crop_WC.joblib')
+        self.DT_Crop = load('Models/Crop/Crop_DT.joblib')
+        self.GNB_Crop =  load('Models/Crop/Crop_GNB.joblib')
+        self.RF_Crop =  load('Models/Crop/Crop_RF.joblib')
+        self.SVM_Crop =  load('Models/Crop/Crop_SVM.joblib')
+        self.WC_Crop =  load('Models/Crop/Crop_WC.joblib')
         # List of Crop Models
         self.crop_models_list = [self.DT_Crop, self.GNB_Crop, self.RF_Crop, self.SVM_Crop, self.WC_Crop]
         self.crop_models_names = ['DecissionTree', 'GausianNaivyBayes', 'RandomForest', 'SupportVectorMachine', 'WeigthedClassifier']
 
         # Weather Models Init
         ## Temperature
-        self.LR_Temp = load('../Models/Weather/Temp_LR.joblib')
+        self.LR_Temp = load('Models/Weather/Temp_LR.joblib')
 
         ## Rainfall
-        self.GBR_Rain = load('../Models/Weather/Rainfall_GBR.joblib')
-        self.KR_Rain = load('../Models/Weather/Rainfall_KR.joblib')
-        self.LR_Rain = load('../Models/Weather/Rainfall_LR.joblib')
-        self.SVR_Rain = load('../Models/Weather/Rainfall_SVR.joblib')
+        self.GBR_Rain = load('Models/Weather/Rainfall_GBR.joblib')
+        self.KR_Rain = load('Models/Weather/Rainfall_KR.joblib')
+        self.LR_Rain = load('Models/Weather/Rainfall_LR.joblib')
+        self.SVR_Rain = load('Models/Weather/Rainfall_SVR.joblib')
         # List of Crop Models
         self.rain_model_list = [self.GBR_Rain, self.LR_Rain, self.SVR_Rain]
 
@@ -107,8 +107,4 @@ class CropWeather_Models():
         
         return crop
 
-# cp = CropWeather_Models()
 
-
-# final_result = cp.Future_Crop_Prediction(0,2100,0,50,30,100,80)
-# print(final_result)
