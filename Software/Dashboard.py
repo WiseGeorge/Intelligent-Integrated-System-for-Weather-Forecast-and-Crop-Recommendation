@@ -472,9 +472,9 @@ if selected == "Weather & Crop Software":
                 # State Input
                 st.subheader('Soil Values ')
                 ph = st.number_input('PH Value')
-                n = st.number_input('N Value')
-                p = st.number_input('P Value')
-                k = st.number_input('K Value')
+                n = st.number_input('Nitrogen (N) Value')
+                p = st.number_input('Phosphorus (P) Value')
+                k = st.number_input('Potassium (K) Value')
                 st.write('---')
 
                 # MultiModel
