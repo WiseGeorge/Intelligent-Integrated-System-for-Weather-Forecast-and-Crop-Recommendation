@@ -15,14 +15,13 @@ import time
 import os
 
 import requests, json
-from playsound import playsound
 from datetime import datetime as d
 from Weather_Scrapping.weather import weather 
 # Models_Manager
 from Models_Manager import CropWeather_Models
 CW = CropWeather_Models()
 
-rain_models_df = pd.read_excel('../Models/Metrics/Rainfall_Models_Metrics.xlsx')
+rain_models_df = pd.read_excel('Models/Metrics/Rainfall_Models_Metrics.xlsx')
 
 Temp_Model_dict = {
                     'Model': 'Linear Regression',
@@ -31,11 +30,11 @@ Temp_Model_dict = {
 }
 temp_model_df = pd.DataFrame(Temp_Model_dict,index=[0])
 
-crop_models_df = pd.read_excel('../Models/Metrics/Crop_Models_Metrics.xlsx')
+crop_models_df = pd.read_excel('Models/Metrics/Crop_Models_Metrics.xlsx')
 
 
 #Streamlit Config Functions
-image = Image.open("../Images/Icon.jpg")
+image = Image.open("Images/Icon.jpg")
 st.set_page_config(page_title='Dashboard', page_icon = image, layout='wide')
 
 hide_menu_style = """
@@ -71,7 +70,7 @@ for element in province_series:
 
 
 
-image = Image.open("../Images/Earth2.jpg")
+image = Image.open("Images/Earth2.jpg")
 
 st.write("# **Intelligent Integrated System for Weather Forecast and Crop Recommendation.**")
 
