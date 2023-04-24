@@ -1,16 +1,16 @@
 import pandas  
 import numpy as npy
-#import sklearn
+import sklearn
 import matplotlib.pyplot as plt
 from scipy import stats as st
-#from sklearn import linear_model
+from sklearn import linear_model
 from scipy import stats
 
 
 class TempManger:
     
     #Atributos
-    df = pandas.read_excel("../Datasets/TempFilter.xlsx")
+    df = pandas.read_excel("Datasets/TempFilter.xlsx")
     
     
 
@@ -238,7 +238,7 @@ print(df)
 
 class RainfallManager():
     #Atributos
-    df = pandas.read_excel("../Datasets/RainfallFilter.xlsx")
+    df = pandas.read_excel("Datasets/RainfallFilter.xlsx")
     
     @classmethod
     def Describe(cls):
