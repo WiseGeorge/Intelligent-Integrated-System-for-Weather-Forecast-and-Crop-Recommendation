@@ -14,7 +14,7 @@ class DataAnalytics:
     
     
     df = pd.read_excel("Datasets/TempFilter.xlsx")
-    df_precip = pd.read_excel("../Datasets/RainfallMean.xlsx")
+    df_precip = pd.read_excel("Datasets/RainfallMean.xlsx")
   
 
     list_keys = list(df_precip.keys())
