@@ -10,7 +10,7 @@ from Manager import DataAnalytics as da
 
 class DataVizualisation(object):
 
-    Temp_df = pd.read_excel("../Datasets/TempFilter.xlsx")
+    Temp_df = pd.read_excel("Datasets/TempFilter.xlsx")
     Max_Min_df = Temp_df[["Maxima Media","Minima Media"]]
     Maxima_Media_Serie = Temp_df["Maxima Media"]
     Mininma_Media_Serie = Temp_df["Minima Media"]
