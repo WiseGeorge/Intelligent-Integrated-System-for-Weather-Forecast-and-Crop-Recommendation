@@ -9,14 +9,10 @@ from datetime import date
 from Manager import DataAnalytics as da
 from Graphics import DataVizualisation as DT
 
-#Virtual Assitent Imports
-
-import time
-import os
 
 import requests, json
 from datetime import datetime as d
-from Weather_Scrapping.weather import weather 
+
 # Models_Manager
 from Models_Manager import CropWeather_Models
 CW = CropWeather_Models()
