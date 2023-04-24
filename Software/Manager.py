@@ -13,7 +13,7 @@ class DataAnalytics:
 
     
     
-    df = pd.read_excel("../Datasets/TempFilter.xlsx")
+    df = pd.read_excel("Datasets/TempFilter.xlsx")
     df_precip = pd.read_excel("../Datasets/RainfallMean.xlsx")
   
 
