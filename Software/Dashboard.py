@@ -129,7 +129,7 @@ if selected == "Home":
     
         st.header("Direct impact of the effects of global warming on Cuba")
         st.write("The Planet Earth is a system in a very complex state of equilibrium, when creating a destabilization either to natural or artificial causes the earth triggers unpredictable natural disasters to equalize and maintain its balance, it can be considered an action-reaction process. These natural disasters can be severe both for entire civilizations, and for the fauna and flora of the planet. An impressive fact of great interest is that according to the Europa Press Data Agency, Cuba is today the number 1 country in displaced due to natural disasters.")
-        st.image("../Images/desplazado.jpg")
+        st.image("Images/desplazado.jpg")
         
         st.header("Impact of global warming on the agricultural industry")
         st.write("Researchers and scientists have been warning for a long time that the increase in average temperature, the change in the amount and distribution of rainfall, the increase in the concentration of atmospheric carbon dioxide, are among the main effects of climate change on food production. As climate change increases, the areas for crops will decrease, unexpected changes will occur in the planting and harvest periods, an increase in pests and diseases will be evident and even some animal and vegetable species will become extinct. If the right decisions are not taken, a global food insecurity crisis can be triggered, being this even more acute in the countries with the least development of the agricultural industry.")
@@ -139,13 +139,13 @@ if selected == "Home":
 
         st.header("Climate Change Infography by: ")
         st.write('***https://www.boldbusiness.com/***')
-        image = Image.open("../Images/Inphogra.png")
+        image = Image.open("Images/Inphogra.png")
         st.image(image, use_column_width=True)
 
             
         st.header("The situation of soils in Cuba")
         st.write("At the Workshop Food Sovereignty and food plants for a better adaptation to climate change, held at the Friends of the Country Economic Society, Dr. Sergio Rodríguez Morales, director of the Tropical Viands Research Institute (INIVIT), precise:“In the country we have 76 percent of all agricultural areas with low productive soils, 14.9 percent are affected by salinity or modicity and 31 percent have low organic matter content” With the approach of Dr. Sergio Rodríguez Morales, it is reaffirmed that Cuba is not in a favorable position as far as fertile soils are concerned and if we add to this some of the environmental problems referred to above, the situation becomes critical.")
-        st.image("../Images/suelo.jpg")
+        st.image("Images/suelo.jpg")
     
 
 if selected == "Statistics":
@@ -166,7 +166,7 @@ if selected == "Statistics":
     with col2:
         st.header("")
         st.header("Temperature Data Visualization")
-        st.image("../Images/temp.jpg")
+        st.image("Images/temp.jpg")
 
     # 1. Anual Temperature Maxime and Minime
     colum1, colum2 = st.columns(2)
@@ -209,7 +209,7 @@ if selected == "Statistics":
 
     with col2:
         st.header("Rainfall Data Visualization")
-    st.image("../Images/Rain.jpg")
+    st.image("Images/Rain.jpg")
     
     st.subheader("🌧️Rainfall Mean Average 🌧️")
     st.bar_chart(data = RainFall_df, y = "Mean", x = "Año")
@@ -221,7 +221,7 @@ if selected == "Predict":
     col1,col2,col3 = st.columns([1,18,1])
     with col2:
         st.header("Predictions Using Advanced Machine Learning Techniques")
-    st.image("../Images/ia2.jpg")
+    st.image("Images/ia2.jpg")
     st.header("")
 
     Year_list_before = [x for x in range(1900, 2000, 10)]
@@ -420,14 +420,6 @@ if selected == "Weather & Crop Software":
                 
                     st.write(dict_crop_pred)
                     
-
-
-
-
-
-
-
-
         if selec_c == 'Semi-Auto':
 
             st.write("""### Rainfall Model is Based on Support Vector Regressor    
