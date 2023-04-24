@@ -330,9 +330,3 @@ class DataAnalytics:
         dataframePredict = pd.DataFrame({'Años':listaux, y: list})
         return dataframePredict
 
-list = [i for i in range(2030,2071)]
-
-# print(TempManger.PredictionAnnual("Año","Maxima Media",list))
-# se aprecia un aumento del 0.04% de la temperatura maxima y minima a medida que pasan los años
-# se aprecia un aumento del 1,9% de la temperatura maxima y minima entre el año 2030 y 2070
-
