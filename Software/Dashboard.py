@@ -502,44 +502,6 @@ if selected == "Weather & Crop Software":
                         st.write(f'##### {crop_pred}')
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if selected == "Download":
     #####################
     # Input Text Box
@@ -553,23 +515,23 @@ if selected == "Download":
         return df.to_csv().encode('utf-8')
 
 
-
+    
     #converting the sample dataframe
 
     #Importing All Data Sets
-    temperature = pd.read_excel("../Datasets/TempFilter.xlsx")
+    temperature = pd.read_excel("Datasets/TempFilter.xlsx")
     temp = convert_df(temperature)
 
     rainfall = da.makePrecipitationDf()
     rainfall = convert_df(rainfall)
 
-    incremento = pd.read_csv("../Datasets/incremento.csv")
+    incremento = pd.read_csv("Datasets/incremento.csv")
     incremento = convert_df(incremento)
 
-    desplasado = pd.read_csv("../Datasets/desplazado.csv")
+    desplasado = pd.read_csv("Datasets/desplazado.csv")
     desplasado = convert_df(desplasado)
 
-    mediaMundial = pd.read_csv("../Datasets/mediamundial.csv")
+    mediaMundial = pd.read_csv("Datasets/mediamundial.csv")
     mediaMundial = convert_df(mediaMundial)
 
     st.header("Download the Main Data Sets")
@@ -617,7 +579,7 @@ if selected == "Download":
 
 if selected == "About":
 
-    col1,col2,col3 = st.columns([3,6,3])
+    col1,col2,col3 = st.columns([3,12,3])
     with col2:
         st.header("👨‍💻Research and development team👨‍💻: ")
         
