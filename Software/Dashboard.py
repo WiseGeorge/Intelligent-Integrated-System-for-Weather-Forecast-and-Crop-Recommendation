@@ -373,7 +373,7 @@ if selected == "Weather & Crop Software":
         st.write('- ##### ***Manual:*** All climate and soil characteristics as inputs')
         st.write("""- ##### ***Semi-Automatic:*** Soil characteristics as input, but climate characteristics temperature and precipitation are fed from a predictive model. For humidity there are only two variants ***mean humidity*** and ***median humidity***""" )
         st.write('In The databases studied no absolute humidity values were recorded but relative humidity.')
-
+        st.write(CW.Crop_Label)
         with st.sidebar:
             selec_c = st.selectbox('Crop Recommendation System', ['Manual', 'Semi-Auto'])
 
